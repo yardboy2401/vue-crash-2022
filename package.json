@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "vue-cli-service serve",
+    "develop": "concurrently npm run serve && npm run backend",
     "serve": "serve -s dist",
     "build": "vue-cli-service build",
     "backend": "json-server --watch db.json --port 5000"
