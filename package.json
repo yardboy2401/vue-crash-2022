@@ -2,24 +2,18 @@
   "name": "vue-crash-2022",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
   "scripts": {
-    "start": "serve -s dist && node server.js",
-    "develop": "concurrently \"npm run serve\" \"npm run backend\"",
+    "start": "serve -s dist",
     "serve": "serve -s dist",
-    "build": "vue-cli-service build",
-    "backend": "json-server --watch db.json --port 5000"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "json-server": "^0.17.0",
     "serve": "^13.0.2",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.13"
+    "vue": "^3.2.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "concurrently": "^7.0.0"
+    "@vue/cli-service": "~5.0.0"
   }
 }
