@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run serve\" \"npm run backend\"",
+    "start": "serve -s dist && json-server --watch db.json --port 5000",
     "develop": "concurrently \"npm run serve\" \"npm run backend\"",
     "serve": "serve -s dist",
     "build": "vue-cli-service build",
