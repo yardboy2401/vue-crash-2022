@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "vue-cli-service serve",
-    "develop": "concurrently npm run serve && npm run backend",
+    "develop": "concurrently \"npm run serve\" \"npm run backend\"",
     "serve": "serve -s dist",
     "build": "vue-cli-service build",
     "backend": "json-server --watch db.json --port 5000"
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "concurrently": "^7.0.0"
   }
 }
